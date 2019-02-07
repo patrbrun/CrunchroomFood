@@ -17,6 +17,12 @@
 body {
   font-family: "Open Sans", sans-serif;
   font-size: 14px; }
+  
+  .index {
+    background-image: url(img/bg-img/bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
 
 h1,
 h2,
