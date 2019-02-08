@@ -144,19 +144,18 @@
 
         <center><ul class="app-inputs">
                 <div class="app-input-group">
-                        
                     <div class="custom-control custom-checkbox custom-control-inline">
-                                <input type="checkbox" class="custom-control-input" id="defaultInline1">
-                                <label class="custom-control-label" for="defaultInline1"></label>
-                              </div>
+                                <input type="checkbox" class="custom-control-input" id="defaultInline2">
+                                <label class="custom-control-label" for="defaultInline2"></label>
+                    </div>
                               
                     <input class="foodItem" type="text" v-model="foodItem" placeholder="Food item" id="app-input0">
                     <span class="app-icon app-add glyphicon glyphicon-plus"  @click="addFoodItem"></span>
                 </div>
                 <li v-for="(item, index) in extraFoodItems" :key="item.id">
                             <div class="custom-control custom-checkbox custom-control-inline">
-                                    <input type="checkbox" class="custom-control-input" id="defaultInline1">
-                                    <label class="custom-control-label" for="defaultInline1"></label>
+                                    <input type="checkbox" class="custom-control-input" id="defaultInline3">
+                                    <label class="custom-control-label" for="defaultInline3"></label>
                                   </div>
                         
                         <input class="extraFoodItem" type="text" placeholder="Food item" v-model="item.name" v-bind:id="'app-input'+item.id">
@@ -164,8 +163,46 @@
                     </div>
                 </li>
             </ul>
-            <br><br>
-            <button class="app-large-btn btn btn-primary" @click="confirm">See recipe</button></center>
+            <br>
+
+            <!--Spices-->
+        
+            <section class="best-receipe-area">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="section-heading">
+                                <h4>Spices</h4>
+                                <h8>Got any spices in your kitchen? Add them here!</h8>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            
+                <center><ul class="app-inputs">
+                        <div class="app-input-group">
+                            <div class="custom-control custom-checkbox custom-control-inline">
+                                        <input type="checkbox" class="custom-control-input" id="defaultInline2">
+                                        <label class="custom-control-label" for="defaultInline2"></label>
+                            </div>
+                                      
+                            <input class="foodItem" type="text" v-model="foodItem" placeholder="Food item" id="app-input0">
+                            <span class="app-icon app-add glyphicon glyphicon-plus"  @click="addFoodItem"></span>
+                        </div>
+                        <li v-for="(item, index) in extraFoodItems" :key="item.id">
+                                    <div class="custom-control custom-checkbox custom-control-inline">
+                                            <input type="checkbox" class="custom-control-input" id="defaultInline3">
+                                            <label class="custom-control-label" for="defaultInline3"></label>
+                                          </div>
+                                
+                                <input class="extraFoodItem" type="text" placeholder="Food item" v-model="item.name" v-bind:id="'app-input'+item.id">
+                                <span class="app-icon app-remove glyphicon glyphicon-minus" @click="deleteRow(index)"></span>
+                            </div>
+                        </li>
+                    </ul>
+                    <br><br>
+                    <button class="app-large-btn btn btn-primary" @click="confirm">See recipe</button></center>
+
+
            
 
                 <!-- Single Best Receipe Area 
