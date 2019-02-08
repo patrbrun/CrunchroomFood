@@ -537,10 +537,10 @@ textarea:focus {
 /* :: 15.0 Receipe Area */
 
 .tobuy {
-background-color: #b6b6b6;
-padding: 2px;
-margin-left: 25px;
-}
+  font-size: 24px;
+  display: block;
+  color: #a4a4a4;
+  margin-bottom: 0; }
 
 .receipe-post-search {
   position: relative;
