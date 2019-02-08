@@ -75,8 +75,8 @@
                             <div class="classynav">
                                 <ul>
                                     <li class="active"><a href="index.html">Home</a></li>
-                            
                                     <li><a href="menu.html">Recipes</a></li>
+                                    <li><a href="tobuy.html">To Buy</a></li>
                                 </ul>
                             <!-- Nav End -->
                         </div>
@@ -96,7 +96,7 @@
                 <div class="container h-100 w-100">
                     <div class="row h-100 align-items-center">
                         <div class="col-12 col-md-9 col-lg-7 col-xl-6">
-                                <h2 data-animation="fadeInUp" data-delay="300ms">Have food in your fridge but don't know what to cook?</h2>
+                                <h1 data-animation="fadeInUp" data-delay="300ms">Have food in your fridge but don't know what to cook?</h1>
                                 <h8 data-animation="fadeInUp" data-delay="700ms">We can help. Just select your ingredients and we will show you possible recipes. </h8>
                             </div>
                         </div>
@@ -181,8 +181,8 @@
                 <center><ul class="app-inputs">
                         <div class="app-input-group">
                             <div class="custom-control custom-checkbox custom-control-inline">
-                                        <input type="checkbox" class="custom-control-input" id="defaultInline2">
-                                        <label class="custom-control-label" for="defaultInline2"></label>
+                                        <input type="checkbox" class="custom-control-input" id="defaultInline4">
+                                        <label class="custom-control-label" for="defaultInline4"></label>
                             </div>
                                       
                             <input class="foodItem" type="text" v-model="foodItem" placeholder="Food item" id="app-input0">
@@ -190,8 +190,8 @@
                         </div>
                         <li v-for="(item, index) in extraFoodItems" :key="item.id">
                                     <div class="custom-control custom-checkbox custom-control-inline">
-                                            <input type="checkbox" class="custom-control-input" id="defaultInline3">
-                                            <label class="custom-control-label" for="defaultInline3"></label>
+                                            <input type="checkbox" class="custom-control-input" id="defaultInline5">
+                                            <label class="custom-control-label" for="defaultInline5"></label>
                                           </div>
                                 
                                 <input class="extraFoodItem" type="text" placeholder="Food item" v-model="item.name" v-bind:id="'app-input'+item.id">
@@ -200,10 +200,38 @@
                         </li>
                     </ul>
                     <br><br>
+
+            <!-- Cooking time -->
+
+            <section class="best-receipe-area">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="section-heading">
+                                <h4>Cooking time</h4>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <div class="custom-control custom-checkbox custom-control-inline">
+                    <input type="checkbox" class="custom-control-input" id="defaultInline6">
+                    <label class="custom-control-label" for="defaultInline6"><h8>20 to 30 minutes</h8></label>
+                  </div>
+
+                  <div class="custom-control custom-checkbox custom-control-inline">
+                        <input type="checkbox" class="custom-control-input" id="defaultInline7">
+                        <label class="custom-control-label" for="defaultInline7"><h8>30 to 60min</h8></label>
+                      </div>
+
+                      <div class="custom-control custom-checkbox custom-control-inline">
+                            <input type="checkbox" class="custom-control-input" id="defaultInline8">
+                            <label class="custom-control-label" for="defaultInline8"><h8>1 to 1.5 hours</h8></label>
+                          </div>
+            
+                    <br><br>
                     <button class="app-large-btn btn btn-primary" @click="confirm">See recipe</button></center>
-
-
-           
+                    <br><br>
+                    <br><br>
 
                 <!-- Single Best Receipe Area 
 
