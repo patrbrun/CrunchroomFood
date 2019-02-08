@@ -58,9 +58,6 @@
                     <!-- Menu -->
                     <nav class="classy-navbar justify-content-between" id="deliciousNav">
 
-                        <!-- Logo 
-                        <a class="nav-brand" href="index.html"><img src="img/core-img/logor.png" alt=""></a>-->
-
                         <!-- Navbar Toggler -->
                         <div class="classy-navbar-toggler">
                             <span class="navbarToggler"><span></span><span></span><span></span></span>
@@ -96,7 +93,7 @@
             
             <!-Single Hero Slide -->
             <!--<div class="single-hero-slide bg-img" style="background-image: url(img/bg-img/bg.jpg);">-->
-                <div class="container h-100">
+                <div class="container h-100 w-100">
                     <div class="row h-100 align-items-center">
                         <div class="col-12 col-md-9 col-lg-7 col-xl-6">
                                 <h2 data-animation="fadeInUp" data-delay="300ms">Have food in your fridge but don't know what to cook?</h2>
@@ -135,10 +132,40 @@
             <div class="row">
                 <div class="col-12">
                     <div class="section-heading">
-                        <h3>Or select a popular one below:</h3>
+                        <h4>Ingredients in kitchen</h4>
+                        <h8>Tell us what ingredients you have you in your kitchen. </h8>
+
                     </div>
                 </div>
             </div>
+        </section>
+
+        <!--Jooseps code-->
+
+        <center><ul class="app-inputs">
+                <div class="app-input-group">
+                        
+                    <div class="custom-control custom-checkbox custom-control-inline">
+                                <input type="checkbox" class="custom-control-input" id="defaultInline1">
+                                <label class="custom-control-label" for="defaultInline1"></label>
+                              </div>
+                              
+                    <input class="foodItem" type="text" v-model="foodItem" placeholder="Food item" id="app-input0">
+                    <span class="app-icon app-add glyphicon glyphicon-plus"  @click="addFoodItem"></span>
+                </div>
+                <li v-for="(item, index) in extraFoodItems" :key="item.id">
+                            <div class="custom-control custom-checkbox custom-control-inline">
+                                    <input type="checkbox" class="custom-control-input" id="defaultInline1">
+                                    <label class="custom-control-label" for="defaultInline1"></label>
+                                  </div>
+                        
+                        <input class="extraFoodItem" type="text" placeholder="Food item" v-model="item.name" v-bind:id="'app-input'+item.id">
+                        <span class="app-icon app-remove glyphicon glyphicon-minus" @click="deleteRow(index)"></span>
+                    </div>
+                </li>
+            </ul>
+            <br><br>
+            <button class="app-large-btn btn btn-primary" @click="confirm">See recipe</button></center>
            
 
                 <!-- Single Best Receipe Area 
@@ -189,17 +216,14 @@
       </div>
 </div>
   </section>-->
-</div>
-</div>
-</div>
     <!-- ##### Best Receipe Area End ##### -->
     </div>
 </div>
 </div>
 
-	<center><a href="recipe.html" class="btn delicious-btn" data-animation="fadeInUp" data-delay="1000ms">See Recipe</a></center>
+<!--	<center><a href="recipe.html" class="btn delicious-btn" data-animation="fadeInUp" data-delay="1000ms">See Recipe</a></center>-->
    
-    <!-- ##### Footer Area Start #####
+    <!-- ##### Footer Area Start ####
                         </div>
                     </div>
                 </div>
@@ -209,8 +233,8 @@
         <div class="container h-100">
             <div class="row h-100">
                 <div class="col-12 h-100 d-flex flex-wrap align-items-center justify-content-between">
-                    <div <h5>Copyright by Crunchroom 2018. All rights reserved.</h5>                    
-                    </div>
+                    <div><center><h5>Meet the Crunchroom team!</h5></center></div>
+
                     </div>
                 </div>
             </div>

@@ -97,9 +97,7 @@
             smartSpeed: 1000
         });
     }
-
   
-
     // :: 7.0 ScrollUp Active Code
     if ($.fn.scrollUp) {
         browserWindow.scrollUp({

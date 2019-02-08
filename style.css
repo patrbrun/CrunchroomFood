@@ -16,13 +16,19 @@
 
 body {
   font-family: "Open Sans", sans-serif;
-  font-size: 14px; }
+  font-size: 14px; 
+}
   
   .index {
-    background-image: url(img/bg-img/bg.jpg);
+    background-image: url("img/bg-img/bg.jpg");
     background-repeat: no-repeat;
     background-size: cover;
   }
+
+  /*.menu {
+    background-image: url();
+    background-size: cover;
+  }*/
 
 h1,
 h2,
@@ -162,7 +168,7 @@ input[type=text]:focus {
   margin-bottom: 80px;
   color: #474747;
   text-align: center; }
-  .section-heading h3 {
+  .section-heading h4 {
     font-size: 30px;
     color: #474747;
     margin-bottom: 0; }
@@ -319,13 +325,13 @@ textarea:focus {
       right: 30px; } }
 
 /* Button */
-.delicious-btn {
+.delicious-btn, .btn-primary {
   display: inline-block;
   min-width: 160px;
   height: 60px;
   color: #ffffff;
   border: none;
-  border-left: 3px solid #1c8314;
+  border-left: 3px solid #6d9c6a;
   border-radius: 0;
   padding: 0 30px;
   font-size: 16px;
@@ -528,19 +534,29 @@ textarea:focus {
         .single-top-catagory .top-cta-content h6 {
           margin-bottom: 10px; } }
 
-
-
 /* :: 15.0 Receipe Area */
+
+.tobuy {
+background-color: #b6b6b6;
+padding: 2px;
+margin-left: 25px;
+}
+
 .receipe-post-search {
   position: relative;
-  z-index: 20; }
+  z-index: 20; 
+  }
+  
   .receipe-post-search form input {
-    width: 100%;
+    width: 140%;
     height: 60px;
-    background-color: #f3f5f8;
-    font-size: 14px;
+    background-color: #ffffff;
+    font-size: 18px;
+    color: black;
     padding: 0 20px;
-    border: none; }
+    border: 2ox;
+    border-style: inset; 
+    border-color: #b6b6b6; }
   @media only screen and (min-width: 768px) and (max-width: 991px) {
     .receipe-post-search .col-12 {
       margin-bottom: 30px; } }
